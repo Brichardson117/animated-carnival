@@ -6,7 +6,8 @@ const uuid = require('./helpers/uuid');
 const PORT = process.env.PORT || 3001;
 const app = express()
 
-
+app.use(express.urlencoded({ extended: true}));
+app.use(express.static('public'));
 
 //HTML routes
 app.get('/notes', (req, res) => {
@@ -20,7 +21,14 @@ app.get('*', (req, res) => {
 
 //api routes
 app.get('/api/notes', (req, res) => {
-
+ fs.readFile('./db/db.json', (req, res) => {
+    if(results) {
+        res.json(results)
+    } else {
+        res.send(404);
+    };
+    return results;
+ })
 });
 
 

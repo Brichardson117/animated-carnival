@@ -1,0 +1,23 @@
+{
+  "name": "challenge-notetaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brichardson117/animated-carnival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brichardson117/animated-carnival/issues"
+  },
+  "homepage": "https://github.com/Brichardson117/animated-carnival#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
